@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #282828 !important; /* a bad temp fix*/
+  position: relative;
+/*	align-items: flex-end; */
+}
+.content {
+  width: 85%; /* This needs to change to 85% on click of the menu*/
+  height: 100%;
+  margin-left:auto;
+  //text-align: right; //may need to make this more specific to an elem
+}
+
+nav {
+
+}
+
+.sideNav {
+  position: fixed;
+  height: 100%;
+  width: 15%; /* change back to 15%*/
+  border-right: 1px solid white; /* with or without? */
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.a {
+  background-color: #282828;
+  //background-color: red;
+
+}
+
+.b {
+  background: #303030;
+  //background-color: blue;
+  //second elem, can add more or make even/odds?
+}
+
+.c {
+  background-color: #1c1b1b;
+  //background-color: yellow;
+  //nav bar
+}
+
+.headings {
+  text-align: right;
+  font-family: fantasy;
+  font-size: 60px; /*vw viewport width, to make font responsive */
+  color: yellow;
+  padding-right: 8%;
+}
+
+.myFace {
+  border: 3px solid yellow;
+  border-radius: 50%;
+}
+
+.imgDiv {
+padding: 20%;
+}
+
+.navLinks {
+font-family: fantasy; /* may want to use lobster */
+color: white;
+font-size: 2vw;
+padding-right: 20%;
+text-decoration:none; /* a tags have underline as default */
+list-style-type: none;
+}
+.aboutMeP{
+color:white;
+font-size: 18px;
+padding: 1% 20% 1% 20%;
+}
+.miniHeads {
+  color: yellow;
+  font-family: fantasy;
+  font-size: 25px;
+  padding-left: 20%;
+}
+
+.mainDiv {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a:hover {
+  color: yellow !important;
+}
+
+
+
+/*Menu items */
+
+.nav div {
+  height: 4px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.nav {
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+  position: fixed;
+}
+
+.one {
+  width: 30px;
+}
+.two {
+  width: 20px;
+}
+.three {
+  width: 25px;
+}
+
+.nav:hover div {
+  width: 30px;
+  background-color: yellow;
+}
