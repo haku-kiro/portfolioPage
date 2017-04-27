@@ -17,7 +17,7 @@ $(document).ready(function(){
     $(".nav").hide();
   });
 
-  $(".content").click(function(){
+  $("html").click(function(){
     //clicking on content makes the menu disapear
     $("nav").hide();
     $(".content").css("width", "100%");
