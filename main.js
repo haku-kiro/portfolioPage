@@ -1,27 +1,23 @@
-console.log("Test");
-
-function test() {
-  console.log("You clicked the menu button"); //traditional js
-}
 // jquery:
-
 //add some hide functionallity
-
 $(document).ready(function(){
-    $("nav").hide();
+    $(".c").hide();
+    // document.getElementById("navBar").setAttribute("style", "display:none"); //just making the elem invis
     $(".content").css("width","100%");
-  $(".nav").click(function(){
+    
+//when you click the menu, shows the side bar    
+  $(".menu").click(function(){
     //clicking on the nav makes the menu appear
     $(".content").css("width", "85%");
-    $("nav").show();
-    $(".nav").hide();
+    $(".c").show();
+    $(".menu").hide();
   });
 
-  $("html").click(function(){
+  $(".content").click(function(){
     //clicking on content makes the menu disapear
-    $("nav").hide();
+    $(".c").hide();
     $(".content").css("width", "100%");
-    $(".nav").show();
+    $(".menu").show();
   });
-
 });
+
